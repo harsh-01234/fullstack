@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style> 
+    body{
+      background-color: aquamarine;
+    }
+  </style>
+  
+</head>
+<body class="flex justify-center">
+  <div class="bg-while shadow-lg rounded-lg w-full p-6">
+    <h1 class="mb-4 text-3xl font-bold text-grey-500">To-Do List</h2>
+    <div class="mt-4">
+      <input type="text" placeholder="Add a new task..." id="taskInput">
+      <button id="addBtn">Add</button>
+  
+
+    <ul>
+      <li class="flex">
+        <input type="checkbox" checked><p class="ml-2"></p> Task-1 
+        <button class="ml-auto">&times</button></li>
+      <li class="flex">
+        <input type="checkbox" checked><p class="ml-2"></p> Task-3 
+        <button class="ml-auto">&times</button></li>
+      <li class="flex"><input type="checkbox" checked><p class="ml-2"></p> Task-5 
+        <button class="ml-auto">&times</button></li>
+      <li class="flex"><input type="checkbox" checked><p class="ml-2"></p> Task-2 <button class="ml-auto">&times</button></li>
+    </ul>
+    </div>
+
+    <h3>Completed</h3>
+    <ul class="completed-list">
+      <li>✓ <span class="completed-task">Task-4</span></li>
+      <li>✓ <span class="completed-task">Task-6</span></li>
+      <li>✓ <span class="completed-task">Task-7</span></li>
+      <li>✓ <span class="completed-task">Task-8</span></li>
+    </ul>
+  </div>
+</body>
+</html>
